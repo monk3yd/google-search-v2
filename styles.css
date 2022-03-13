@@ -10,14 +10,96 @@ html {
 }
 
 body {
+    background: #202124;
+    color: white;
     height: 100vh;
 }
 
+/* Navbar */
 .navbar {
-    font-size: 1.6rem;
-    height: 7rem;
+    color: white;
+    font-size: 1.4rem;
+    height: 12vh;
+    text-decoration: none;
 }
 
 .navbar-item {
     padding: 0 1rem;
+}
+
+.nav-link {
+    color: inherit;
+}
+
+.main-content-box {
+    display: flex;
+    flex-direction: column;
+    /* height: 88vh; */
+    margin-top: 15rem;
+}
+
+/* Logo */
+.glogo-container {
+    display: flex;
+    margin: auto;
+    width:52.7rem;
+}
+
+.google-logo {
+    margin: auto;
+}
+
+/* Main Form */
+.main-form {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem;
+    width:52.7rem;
+}
+
+.search-box {
+    /* TODO Check radius*/
+    background-color: transparent;
+    border-radius: 2rem;
+    color: #e8eaed;
+    font-size: 1.6rem;
+    height: 3.4rem;
+}
+
+.btn-box {
+    display: flex;
+    padding-top: 1.8rem;
+    margin: auto;
+}
+
+.format-btn {
+    display: flex;
+    margin: auto;
+}
+
+.search-btn {
+    background-color: #303134;
+    border: 0.1rem solid #303134;
+    border-radius: 0.4rem;
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.4rem;
+    height: 3.6rem;
+    line-height: 2.7rem;
+    margin: 1.1rem 0.4rem;
+    text-align: center;
+    width: 15rem;
+}
+
+.search-btn:hover {
+    box-shadow: 0 0.1rem 0.3rem rgba(23, 23, 23, 0.24);
+    border: 0.1rem solid #5f6368;
+    color: #e8eaed;
+}
+
+/* Advanced Form */
+.advanced-form {
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
 }
