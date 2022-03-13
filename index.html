@@ -5,8 +5,11 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         
         <!-- Page Title Tab -->
-        <title>Google</title>
+        <title>Google Search</title>
          
+        <!-- Import Fontawesome Icons -->
+        <script src="https://kit.fontawesome.com/88fb55dd84.js" crossorigin="anonymous"></script>
+
         <!-- Import Bootstrap 5 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
@@ -34,23 +37,25 @@
         
         <!-- Main -->
         <div class="main-content-box">
-                <!-- Logo -->
-                <div class="glogo-container">
-                    <img class="google-logo" src="/googlelogo.png" alt="google-logo">
-                </div>
-                <!-- Form -->
-                <form class="main-form" action="https://google.com/search">
-                    <div>
+            <!-- Logo -->
+            <div class="glogo-container">
+                <img class="google-logo" src="/googlelogo.png" alt="google-logo">
+            </div>
+            <!-- Form -->
+            <form class="main-form" action="https://google.com/search">
+                <div class="search-wrapper">
+                    <div class="glass-icon-wrap">
+                        <i class="glass-icon fa-xl fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="search-box-wrap">
                         <input class="search-box form-control" type="text" name="q">
                     </div>
-                    <div class="btn-box">
-                        <div class="format-btn">
-                            <input class="search-btn form-control" type="submit" value="Google Search">
-                            <input class="search-btn form-control" type="submit" value="Feeling Lucky!">
-                        </div>
-                    </div>
-                </form>
-            
+                </div>
+                <div class="btn-box">
+                    <input class="search-btn form-control" type="submit" value="Google Search">
+                    <input class="search-btn form-control" type="submit" value="Feeling Lucky!">
+                </div>
+            </form>
         </div>
 
         <!-- Template Bootstrap 5 JS -->

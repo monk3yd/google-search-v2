@@ -1,4 +1,4 @@
-/* My CSS Template */
+/* Template */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +9,14 @@ html {
     font-size: 62.5%;
 }
 
+
+/* General Config */
 body {
     background: #202124;
     color: white;
     height: 100vh;
 }
+
 
 /* Navbar */
 .navbar {
@@ -31,50 +34,96 @@ body {
     color: inherit;
 }
 
+/* Includes Logo & Form */
 .main-content-box {
-    display: flex;
-    flex-direction: column;
-    /* height: 88vh; */
-    margin-top: 15rem;
+    display: block;
+    height: 88vh;
+    text-align: center;
 }
+
 
 /* Logo */
 .glogo-container {
-    display: flex;
-    margin: auto;
-    width:52.7rem;
+    display: block;
+    text-align: center;
+    height: 40%;
 }
 
 .google-logo {
-    margin: auto;
+    position: relative;
+    top: 60%;
 }
+
 
 /* Main Form */
 .main-form {
-    display: block;
-    margin: 2rem auto;
-    padding: 1rem;
-    width:52.7rem;
+    display: inline-block;
+    /* width:52.7rem; */
+}
+
+/* Wraps glass icon with search bar */
+.search-wrapper {
+    display: flex;
+    border: 0.2px solid #5f6368;
+    border-radius: 2rem;
+    width: 56.7rem;
+}
+
+/* .search-wrapper:hover {
+    background-color: #303134;
+    box-shadow: 0 0.1rem 0.6rem #171717;
+    border-color: rgba(223,225,229,0);
+} */
+
+/* Glass */
+
+/* .glass-icon-wrap {
+    height: 3rem;
+    width: 3rem;
+} */
+
+.glass-icon {
+    margin: 2rem;
+}
+
+/* Search Box */
+
+.search-box-wrap {
+    /* display: flex; */
+    display: inline-block;
+    height: 4rem;
+    width: inherit;
 }
 
 .search-box {
-    /* TODO Check radius*/
     background-color: transparent;
-    border-radius: 2rem;
+    border: #303134;
+    /* border-radius: 2rem; */
     color: #e8eaed;
     font-size: 1.6rem;
-    height: 3.4rem;
+    height: inherit;
 }
 
+/* .search-box:hover {
+    background-color: #303134;
+    box-shadow: 0 0.1rem 0.6rem #171717;
+    border-color: rgba(223,225,229,0);
+} */
+
+.search-box:focus {
+    background: transparent;
+    border-radius: 0 2rem 2rem 0;
+    padding-left: 2rem;
+    /* border-color: rgba(223,225,229,0); */
+    caret-color: whitesmoke;
+    color: whitesmoke;
+}
+
+/* Buttons */
 .btn-box {
-    display: flex;
+    display: inline-flex;
     padding-top: 1.8rem;
-    margin: auto;
-}
-
-.format-btn {
-    display: flex;
-    margin: auto;
+    /* margin: auto; */
 }
 
 .search-btn {
@@ -96,9 +145,14 @@ body {
     color: #e8eaed;
 }
 
+
+
+
+
+
 /* Advanced Form */
 .outer-wrapper {
-    height: 88vh;
+    /* height: 88vh; */
 }
 
 .advanced-form {
@@ -124,6 +178,13 @@ body {
     margin-top: 0.5rem;
 }
 
+.advanced-input:focus {
+    background-color: transparent;
+    border-color: #5f6368;
+    caret-color: whitesmoke;
+
+}
+
 .advanced-label, .advanced-input{
     padding: 0.5rem 0;
 }
@@ -141,6 +202,7 @@ body {
     font-weight: 600;
     line-height: 1.5;
     margin: 1.1rem auto;
+    padding: 0.7rem 0.4rem;;
     text-align: center;
     width: 14rem;
 }
