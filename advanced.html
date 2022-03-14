@@ -16,13 +16,16 @@
     <body>
         <nav class="navbar navbar-expand">
             <div class="nav-container container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="googlelogo.png" alt="google-logo" width="72" height="24">
+                </a>
                 <!-- <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button> -->
                 <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
                 <ul class="navbar-nav ms-auto">
                     <li class="navbar-item">
-                        <a class="nav-link" href="/index.html">Home</a>
+                        <a class="nav-link" href="/index.html">Go to Google Home</a>
                     </li>
                 </ul>
                 <!-- </div> -->
@@ -31,47 +34,54 @@
         
         <!-- Main -->
         <div class="outer-wrapper">
+            <div class="heading-wrap">
+                <p class="advanced-heading">Advanced Search</p>
+            </div>
+            <hr>
             <!-- Advanced Form -->
             <form class="advanced-form" action="https://google.com/search">
-                <div class="advanced-form-content">
-                    <span class="">Find pages with...</span>
-                    <div class="row">
-                        <div class="col-3">
-                            <label class="advanced-label form-label form-text" for="">all these words:</label>
+                <div class="subtitle-wrap">
+                    <span class="advanced-subtitle">Find pages with...</span>
+                </div>    
+                <div class="advanced-layout-wrap">
+                    <div class="column">
+                        <div class="line">
+                            <div class="label-wrap">
+                                <label class="advanced-label form-label form-text" for="">all these words:</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="advanced-input form-control" type="text">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input class="advanced-input form-control" type="text">
+                        <div class="line">
+                            <div class="label-wrap">
+                                <label class="advanced-label form-label form-text" for="">this exact word or phrase:</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="advanced-input form-control" type="text">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <label class="advanced-label form-label form-text" for="">these exact word or phrase:</label><br>
+                        <div class="line">
+                            <div class="label-wrap">
+                                <label class="advanced-label form-label form-text" for="">these exact word or phrase:</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="advanced-input form-control" type="text">
+                            </div>
                         </div>
-                        <div class="col">
-                            <input class="advanced-input form-control" type="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <label class="advanced-label form-label form-text" for="">any of these words:</label>
-                        </div>
-                        <div class="col">
-                            <input class="advanced-input form-control" type="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <label class="advanced-label form-label form-text" for="">none of these words:</label>
-                        </div>
-                        <div class="col">
-                            <input class="advanced-input form-control" type="text">
+                        <div class="line">
+                            <div class="label-wrap">
+                                <label class="advanced-label form-label form-text" for="">none of these words:</label>
+                            </div>
+                            <div class="input-wrap">
+                                <input class="advanced-input form-control" type="text">
+                            </div>
                         </div>
                     </div>
                     <div class="advanced-btn-wrap">
                         <input class="advanced-form-btn" type="submit" value="Advanced Search">
                     </div>
-                    
-                </div>       
+                </div>
             </form>
             
         </div>

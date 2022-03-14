@@ -22,12 +22,16 @@ body {
 .navbar {
     color: white;
     font-size: 1.4rem;
-    height: 12vh;
+    min-height: 12vh;
     text-decoration: none;
 }
 
+.navbar-brand {
+    margin: 1.5rem 1.3rem 1.3rem;
+}
+
 .navbar-item {
-    padding: 0 1rem;
+    padding: 0 2rem;
 }
 
 .nav-link {
@@ -146,62 +150,102 @@ body {
 }
 
 
-
-
-
-
+/* Working but needs RELAYOUT */
 /* Advanced Form */
 .outer-wrapper {
-    /* height: 88vh; */
+    display: block;
+    min-height: 88vh;
+}
+
+.heading-wrap {
+    display: inline-block;
+    margin: 1.5rem 0 0.5rem 4.5rem;
+}
+
+.advanced-heading {
+    color: #f28b82;
+    font-size: 2rem;
+    font-weight: 400;
+
 }
 
 .advanced-form {
+    display: block;
     font-size: 1.6rem;
-    margin: 7rem auto auto 7rem;
+}
+
+.subtitle-wrap {
+    display: block;
+    margin: 4rem 0 0 4rem;
+}
+
+.advanced-layout-wrap {
+    display: block;
+    /* flex-direction: column; */
+    margin: 2rem 0 0 4rem;
+}
+
+.column {
+    display: block;
+    /* display: inline-flex;
+    flex-direction: column; */
+    width: inherit;
 
 }
 
-.advanced-form-content {
+.line {
     display: flex;
-    flex-direction: column;
-    width: 75rem;
+    height: 3.5rem;
+    padding: 2rem 0;
+}
+
+.label-wrap {
+    width: 20rem;
 }
 
 .advanced-label {
+    display: block;
     color: #bdc1c6;
 }
 
+.input-wrap {
+    /* margin-left: 1rem; */
+}
+
 .advanced-input {
+    color: #e8eaed;
     background-color: transparent;
     border-radius: 0;
     border-color: #5f6368;
-    margin-top: 0.5rem;
+    width: 47rem;
 }
 
 .advanced-input:focus {
     background-color: transparent;
     border-color: #5f6368;
-    caret-color: whitesmoke;
-
+    color: #e8eaed;
+    caret-color: #e8eaed;
 }
 
-.advanced-label, .advanced-input{
-    padding: 0.5rem 0;
-}
+/* .advanced-label, .advanced-input {
+    display: block;
+} */
 
 .advanced-btn-wrap {
-    text-align: end;
+    display: block;
+    position: relative;
+    left: 53rem;
 }
 
 .advanced-form-btn {
     background-color: #8ab4f8;;
-    border: 0.1rem solid #3079ed;
+    border: 0.1rem solid transparent;
     border-radius: 0.2rem;
     color: #202124;
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.5;
-    margin: 1.1rem auto;
+    margin: 3rem auto;
     padding: 0.7rem 0.4rem;;
     text-align: center;
     width: 14rem;
