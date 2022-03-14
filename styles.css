@@ -15,6 +15,7 @@ body {
     background: #202124;
     color: white;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -36,6 +37,12 @@ body {
 
 .nav-link {
     color: inherit;
+}
+
+.nav-link:hover {
+    color: #e8eaed;
+    text-decoration: underline;
+    text-decoration-color: #e8eaed;
 }
 
 /* Includes Logo & Form */
@@ -150,7 +157,6 @@ body {
 }
 
 
-/* Working but needs RELAYOUT */
 /* Advanced Form */
 .outer-wrapper {
     display: block;
@@ -187,8 +193,6 @@ body {
 
 .column {
     display: block;
-    /* display: inline-flex;
-    flex-direction: column; */
     width: inherit;
 
 }
@@ -208,10 +212,6 @@ body {
     color: #bdc1c6;
 }
 
-.input-wrap {
-    /* margin-left: 1rem; */
-}
-
 .advanced-input {
     color: #e8eaed;
     background-color: transparent;
@@ -226,10 +226,6 @@ body {
     color: #e8eaed;
     caret-color: #e8eaed;
 }
-
-/* .advanced-label, .advanced-input {
-    display: block;
-} */
 
 .advanced-btn-wrap {
     display: block;
